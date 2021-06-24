@@ -1,0 +1,72 @@
+header{
+    background-image: none;
+}
+header nav{
+    background-color: var(--dark)
+}
+/*-----Step by Step Section-----*/
+.kh-row.kh-w_control{
+    margin-right: -30px;
+}
+.kh-sbs_col {
+    position: relative;
+    width: calc(33.33335% - 30px);
+    margin-right: 30px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.kh-row .kh-sbs_col:nth-child(4), .kh-row .kh-sbs_col:nth-child(5){
+    margin-bottom: 0;
+}
+.kh-sbs_col h3 {
+    margin: 0;
+    font-size: 44px;
+    color: #DCDCDC;
+}
+.kh-sbs_col h4 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: var(--primery);
+    text-transform: uppercase;
+}
+.kh-sbs_col p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #A7A39F;
+}
+.kh-sbs_col p.kh-quote::before {
+    top: 0;
+    height: 133px;
+}
+.kh-sbs_col a {
+    color: var(--primery);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    /*-----Step by Step-----*/
+    .kh-sbs_col h3{
+        font-size: 42px;
+    }
+    .kh-sbs_col h4{
+        font-size: 22px;
+    }
+}
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) {
+    /*-----Step by Step-----*/
+    .kh-sbs_col{
+        width: calc(50% - 30px);
+    }
+}
+@media (max-width: 567px) {
+    /*-----Step by Step-----*/
+    .kh-sbs_col {
+        width: 100%;
+    }
+}

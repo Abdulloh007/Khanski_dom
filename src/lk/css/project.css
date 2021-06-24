@@ -1,0 +1,285 @@
+/*-----Wrap-----*/
+.kh-chart-of-works {
+    width: 35%;
+}
+.kh-chat-item {
+    position: relative;
+    border: 1px solid #473932;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.kh-chat-item::after {
+    position: absolute;
+    content: "";
+    top: 65%;
+    left: calc(30% - 8px);
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(180deg, #7C6F66 0%, rgba(255, 255, 255, 0) 51.04%, #FFFFFF 100%);
+    opacity: 0.7;
+}
+.kh-chart_w-list .kh-chat-item:last-child::after, .kh-chart_w-list .kh-chat-item:last-child::after{
+    content: none;
+}
+.kh-c_i-date {
+    width: 15%;
+    text-align: center;
+}
+.kh-c_i-date h3 {
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #63574F;
+    line-height: 1;
+    margin: 0;
+}
+.kh-c_i-date span {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #63574F;
+}
+.kh-chat-item i {
+    position: relative;
+    width: 10%;
+    font-size: 16px;
+    color: #7C6F66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.kh-c_i-state {
+    width: calc(70% - 15px);
+}
+.kh-c_i-state p {
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #7C6F66;
+    margin: 0;
+}
+.kh-c_i-state em {
+    color: var(--red);
+    font-style: normal;
+}
+.kh-c_i-state h4 {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+.kh-chat-item.kh-state_proccessing {
+    border: 1px solid var(--red);
+}
+.kh-chat-item.kh-state_proccessing .kh-c_i-date h3, .kh-chat-item.kh-state_done .kh-c_i-date h3 {
+    color: var(--red);
+}
+.kh-chat-item.kh-state_proccessing i, .kh-chat-item.kh-state_done i {
+    color: var(--white);
+}
+.kh-chat-item.kh-state_done {
+    border-color: transparent;
+    background: linear-gradient(96.16deg, rgba(217, 148, 120, 0.06) 14.86%, rgba(217, 148, 120, 0.16) 54.08%, rgba(217, 148, 120, 0.03) 98.53%);
+}
+/*Sale banner*/
+.kh-sale-banner {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(44, 38, 34, 0.3);
+    background-image: url(/assets/banners/lk/project/sale_banner-bg),linear-gradient(294.65deg, rgba(44, 38, 34, 0) -0.33%, #D99478 50.59%, rgba(217, 148, 120, 0) 108.29%);
+    backdrop-filter: blur(9px);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.kh-sale-banner img {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    max-width: 100px;
+}
+.kh-sale-banner p {
+    width: calc(100% - 115px);
+    margin: 0 0 0 auto;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.kh-ins-item {
+    position: relative;
+    background: linear-gradient(112.47deg, rgba(217, 148, 120, 0.06) 13.91%, rgba(217, 148, 120, 0.16) 48.39%, rgba(217, 148, 120, 0.03) 87.48%);
+    opacity: 1;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.kh-ins-item span {
+    width: 40px;
+}
+.kh-ins-item span i {
+    color: var(--white);
+    font-size: 30px;
+}
+.kh-ins-item h4 {
+    width: calc(100% - 50px);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--white);
+    margin: 0;
+}
+/*-----Online Camera Section-----*/
+.kh-online-camera {
+    width: calc(30% - 60px);
+}
+.kh-stream {
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.kh-stream::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(96.43deg, rgba(49, 38, 29, 0.74) 7.6%, rgba(49, 38, 29, 0) 100%);
+    z-index: -1;
+}
+.kh-stream h5 {
+    margin: 0 0 30px;
+    padding: 5px 10px;
+    width: fit-content;
+    background: var(--red);
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.kh-stream span {
+    display: flex;
+    justify-content: center;
+}
+.kh-stream span i {
+    color: var(--white);
+    font-size: 18px;
+    width: 77px;
+    height: 77px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+}
+.kh-stream span i:hover{
+    background: var(--red);
+}
+.kh-stream img {
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.kh-online-camera .kh-ins-item h4 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #96887F;
+}
+.kh-slide_top {
+    position: relative;
+    width: 100%;
+}
+.kh-project_l img {
+    max-width: 100%;
+    cursor: pointer;
+}
+.kh-slide-inner {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+}
+.kh-slide-inner p {
+    margin: 0 1px 0 0;
+    height: 30px;
+    font-size: 14px;
+    color: var(--white);
+    background-color: #2c26224d;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+.kh-proj-desc span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.kh-proj-desc h4 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--red);
+}
+
+/*-----Payments Section-----*/
+.kh-chart-of-payments {
+    width: 35%;
+}
+.kh-doc-item {
+    border: 1px solid #473932;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.kh-doc-item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+.kh-doc-item span i {
+    font-size: 30px;
+    color: var(--white);
+}
+.kh-desc_wrap {
+    width: calc(100% - 45px);
+}
+.kh-desc_wrap p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #7C6F66;
+}
+.kh-desc_wrap a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-decoration: none;
+}

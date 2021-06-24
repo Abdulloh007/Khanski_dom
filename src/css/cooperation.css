@@ -1,0 +1,68 @@
+header{
+    background-image: url('/assets/banners/cooperation/h_bg.jpg'), linear-gradient(180deg, rgba(49,38,29,0.9) 35%, rgba(49,38,29,0.35) 100%);
+}
+/*-----Online Application Section-----*/
+.kh-oa-col {
+    width: 45%;
+    margin-bottom: 70px;
+}
+
+.kh-oa-col h3 {
+    font-size: 26px;
+    color: var(--primery);
+    text-transform: uppercase;
+}
+.kh-oa-col p {
+    position: relative;
+    padding-left: 30px;
+    color: #7A746F;
+}
+.kh-oa-col p.kh-quote::before {
+    height: 54px;
+}
+.kh-oa-col a {
+    color: var(--primery);
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1200px) { ... }
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+    /*-----Bonus Section-----*/
+    .kh-b_banner {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .kh-b_banners .kh-b_banner:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 567px) {
+    /*-----Header-----*/
+    .kh-n_half-side {
+        width: 100%;
+        border-bottom: 1px solid #D1D1D1;
+    }
+    /*-----Online Application Section-----*/
+    .kh-oa-col {
+        width: 100%;
+    }
+    .kh-oa-col a{
+        font-size: 14px;
+    }
+    /*-----Bonus Section-----*/
+    .kh-bonus-banner_content h3 {
+        font-size: 26px;
+    }
+    .kh-b_banner{
+        margin-bottom: 15px;
+        padding: 40px 50px 50px;
+    }
+
+}

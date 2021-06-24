@@ -1,0 +1,14 @@
+{
+  "name": "khanski_dom",
+  "version": "1.0.0",
+  "description": "Узнайте стоимость вашего нового кирпичного дома",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "`Abdulloh",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^6.6.2"
+  }
+}

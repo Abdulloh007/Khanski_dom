@@ -1,0 +1,93 @@
+/*-----Wrap-----*/
+.kh-chart-of-works {
+    width: 35%;
+}
+.kh-ins-item {
+    position: relative;
+    background: linear-gradient(112.47deg, rgba(217, 148, 120, 0.06) 13.91%, rgba(217, 148, 120, 0.16) 48.39%, rgba(217, 148, 120, 0.03) 87.48%);
+    opacity: 1;
+    border-radius: 10px;
+    border:1px solid transparent;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+.kh-ins-item.active{
+    background: transparent;
+    border: 1px solid var(--red);
+}
+.kh-ins-item span {
+    width: 40px;
+}
+.kh-ins-item span i {
+    color: var(--white);
+    font-size: 30px;
+}
+.kh-ins-item h4 {
+    width: calc(100% - 50px);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--white);
+    margin: 0;
+}
+.kh-chart-of-works a.kh-btn_red {
+    display: block;
+    border-radius: 10px;
+    margin: 25px 0 35px;
+    text-align: center;
+}
+.kh-chart-of-works .kh-event-item a{
+    text-decoration: none;
+}
+.kh-chart-of-works .kh-event-item i {
+    background: linear-gradient(86.26deg, rgba(217, 148, 120, 0.03) 12.72%, rgba(217, 148, 120, 0.16) 102.89%, rgba(217, 148, 120, 0.03) 205.08%);
+    border-radius: 10px;
+}
+.kh-chart-of-works .kh-e_text-wrap p{
+    background-image: none;
+}
+.kh-chart-of-works .kh-e_text-wrap span{
+    width: 100%;
+}
+/*-----Selected Section-----*/
+.kh-selected-event {
+    position: relative;
+    width: calc(65% - 55px);
+    background: #27221F;
+    margin: -48px 0;
+    padding: 48px 0 48px 55px;
+    box-sizing: border-box;
+}
+.kh-step-list {
+    border-bottom: 1px solid #473932;
+}
+.kh-step-item {
+    padding: 25px 0;
+    border-top: 1px solid #473932;
+}
+.kh-step-item h4 {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(86.26deg, rgba(217, 148, 120, 0.03) 12.72%, rgba(217, 148, 120, 0.16) 102.89%, rgba(217, 148, 120, 0.03) 205.08%);
+    border-radius: 6px;
+}
+.kh-step-item p, .kh-step-item a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: calc(100% - 40px);
+    margin: 0;
+    text-decoration: none;
+}
+.kh-i_red h4{
+    font-size: 18px;
+    color: var(--red);
+    background: none;
+}

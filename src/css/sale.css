@@ -1,0 +1,28 @@
+header{
+    background-image: url('/assets/banners/sale/h_bg.jpg'), linear-gradient(180deg, rgba(49,38,29,0.9) 35%, rgba(49,38,29,0.35) 100%);
+}
+/*-----Banner Section-----*/
+.kh-b_banners .kh-b_banner{
+    margin-bottom: 15px;
+}
+.kh-b_banners .kh-b_banner:nth-child(2n) {
+    margin-right: 0;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) { ... }
+@media (max-width: 992px) {
+    .kh-b_banner {
+        width: 100%;
+        margin: 0;
+    }
+    .kh-b_banner img {
+        width: inherit;
+    }
+}
+@media (max-width: 768px) { ... }
+@media (max-width: 567px) {
+    .kh-b_banner img, .kh-s_slide img {
+        width: auto;
+    }
+}

@@ -1,0 +1,85 @@
+header{
+    background-image: none;
+}
+header nav{
+    background: var(--dark)
+}
+header .kh-banner {
+    background-image: url(/assets/banners/sale_in/h_bg.jpg), linear-gradient(180deg, rgba(49,38,29,0.9) 35%, rgba(49,38,29,0.35) 100%);
+    background-blend-mode: overlay;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 75px 60px;
+}
+.kh-heading-wrap .kh-sec_heading {
+    color: var(--white);
+    margin: 0;
+}
+.kh-heading-wrap p {
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--white);
+    margin: 20px 0;
+}
+/*-----Bonus Rules-----*/
+.kh-jc-center{
+    justify-content: center;
+}
+.kh-ap_half-side {
+    width: 65%;
+}
+.kh-ap_half-side h3 {
+    font-size: 26px;
+    color: var(--primery);
+    text-transform: uppercase;
+}
+.kh-ap_half-side .kh-quote {
+    position: relative;
+    padding-left: 40px;
+    color: #7A746F;
+}
+.kh-ap_half-side .kh-quote::before {
+    top: 10px;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) { ... }
+@media (max-width: 992px) {
+    /*-----Header-----*/
+    .kh-h_banner {
+        padding: 175px 15px 75px;
+        box-sizing: border-box;
+    }
+    .kh-heading-wrap p {
+        font-size: 18px;
+    }
+    /*-----Bonus Rules Section-----*/
+    .kh-ap_half-side {
+        width: 100%;
+    }
+    .kh-ap_half-side h3 {
+        font-size: 24px;
+    }
+    .kh-ap_half-side .kh-quote::before {
+        top: 0;
+    }
+    .kh-ap_half-side .kh-btn_red {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 768px) {
+    /*-----Header-----*/
+    .kh-h_banner {
+        padding: 145px 15px 55px;
+    }
+}
+@media (max-width: 567px) {
+    /*-----Header-----*/
+    .kh-n_half-side {
+        width: 100%;
+        border-bottom: 1px solid #D1D1D1;
+    }
+}

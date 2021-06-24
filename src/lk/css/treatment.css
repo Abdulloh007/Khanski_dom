@@ -1,0 +1,471 @@
+/*-----Wrap-----*/
+.kh-chart-of-works {
+    width: 35%;
+}
+.kh-chart-of-works .kh-event-item{
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    padding: 10px;
+    margin: 0 -10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.kh-event-item i{
+    background: linear-gradient(86.26deg, rgba(217, 148, 120, 0.03) 12.72%, rgba(217, 148, 120, 0.16) 102.89%, rgba(217, 148, 120, 0.03) 205.08%);
+    border-radius: 10px;
+}
+.kh-chart-of-works .kh-e_text-wrap p{
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.kh-chart-of-works .kh-event-item.active{
+    border: 1px solid var(--red);
+    border-radius: 16px;
+}
+/*-----Selected Section-----*/
+.kh-selected-event {
+    position: relative;
+    width: calc(65% - 55px);
+    background: #27221F;
+    margin: -48px 0;
+    padding: 48px 0 48px 55px;
+    box-sizing: border-box;
+}
+.kh-event-poster {
+    position: relative;
+    overflow: hidden;
+}
+.kh-event-poster::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(96.43deg, rgba(49, 38, 29, 0.8) 7.6%, rgba(49, 38, 29, 0) 100%);
+}
+.kh-event-poster img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.kh-heading-wrap {
+    position: absolute;
+    bottom: 0;
+    padding: 25px 30px;
+    color: var(--white);
+}
+.kh-heading-wrap h3 {
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.kh-heading-wrap p {
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+}
+.kh-event-tabination {
+    position: relative;
+    margin-top: 25px;
+}
+.kh-e_t-btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8C7B70;
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-right: 25px;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease
+}
+.kh-e_t-btn.active {
+    color: var(--white);
+    border-bottom: 2px solid var(--red);
+}
+.kh-e_t-nav {
+    border-bottom: 1px solid #473932;
+}
+.kh-e_tab {
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    opacity: 0;
+    transition: all .2s ease
+}
+.kh-e_tab.active {
+    position: static;
+    z-index: 4;
+    opacity: 1;
+}
+.kh-e_tab h4 {
+    margin: 0;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 16px;
+}
+.kh-e_tab p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ACA098;
+    margin: 10px 0 0;
+}
+.kh-e_t-date {
+    width: 100%;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #7C6F66;
+    margin-bottom: 15px;
+}
+.kh-e_report-col {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+.kh-e_report-wrap .kh-e_report-col:nth-child(2n) {
+    margin-right: 0;
+}
+.kh-e_report-col img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Sale banner*/
+.kh-sale-banner {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(44, 38, 34, 0.3);
+    background-image: url(/assets/banners/lk/project/sale_banner-bg),linear-gradient(294.65deg, rgba(44, 38, 34, 0) -0.33%, #D99478 50.59%, rgba(217, 148, 120, 0) 108.29%);
+    backdrop-filter: blur(9px);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 35px 0;
+}
+.kh-sale-banner.active{
+    border: 3px solid var(--red);
+}
+.kh-sale-banner img {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    max-width: 100px;
+}
+.kh-sale-banner p {
+    width: calc(100% - 115px);
+    margin: 0 0 0 auto;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.kh-ins-item {
+    position: relative;
+    background: linear-gradient(112.47deg, rgba(217, 148, 120, 0.06) 13.91%, rgba(217, 148, 120, 0.16) 48.39%, rgba(217, 148, 120, 0.03) 87.48%);
+    opacity: 1;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    align-items: center;
+    transition: all .2s ease;
+}
+.kh-ins-item.active{
+    background: transparent;
+    border: 1px solid var(--red);
+}
+.kh-ins-item span {
+    width: 40px;
+}
+.kh-ins-item span i {
+    color: var(--white);
+    font-size: 22px;
+}
+.kh-ins-item h4 {
+    width: calc(100% - 50px);
+    font-weight: 700;
+    font-size: 10px;
+    color: #96887F;
+    text-transform: uppercase;
+    margin: 0;
+}
+.kh-ins-item.active >  h4{
+    color: var(--white);
+}
+/*-----Chat Section-----*/
+.kh-chat_topbar {
+    padding-bottom: 10px;
+    background: #27221f;
+}
+.kh-ch_meta {
+    width: calc(100% - 65px);
+}
+.kh-ch_meta h2 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #473932;
+}
+.kh-ch_meta p {
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #63574F;
+    margin: 0;
+}
+.kh-ch_avatar {
+    width: 50px;
+    align-content: space-between;
+}
+.kh-ch_img-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.kh-ch_img-wrap img {
+    max-width: 100%;
+}
+.kh-ch_avatar span {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D99478;
+}
+.kh-ch_avatar span {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D99478;
+}
+.kh-chat_messages-item {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.kh-talker {
+    justify-content: flex-start;
+}
+.kh-talker span {
+    text-align: left;
+    margin: 10px 0 0 15px;
+}
+.kh-me {
+    justify-content: flex-end;
+}
+.kh-me .kh-ch_m-content {
+    background: linear-gradient(112.47deg, rgba(217, 148, 120, 0.06) 13.91%, rgba(217, 148, 120, 0.16) 48.39%, rgba(217, 148, 120, 0.03) 87.48%);
+}
+.kh-me span {
+    text-align: right;
+    margin: 10px 15px 0 0;
+}
+.kh-ch_m-content {
+    margin: 0;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #D99478;
+    border-radius: 10px;
+}
+.kh-chat_messages-item span {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 8px;
+    color: #63574F;
+}
+.kh-ch_media {
+    margin-top: 10px;
+    width: 90%;
+}
+.kh-ch_m-col {
+    width: calc(33.33335% - (20px / 3));
+    margin-right: 10px;
+}
+.kh-ch_media .kh-ch_m-col:nth-child(3n) {
+    margin-right: 0;
+}
+.kh-ch_m-col img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.kh-upload_file {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(86.26deg, rgba(217, 148, 120, 0.03) 12.72%, rgba(217, 148, 120, 0.16) 102.89%, rgba(217, 148, 120, 0.03) 205.08%);
+    border-radius: 10px;
+}
+.kh-upload_file input {
+    opacity: 0;
+    width: 0;
+}
+.kh-upload_file i {
+    color: var(--white);
+}
+.kh-message-inp {
+    width: calc(100% - 55px);
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #473932;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.kh-message-inp input {
+    background: transparent;
+    border: none;
+    width: calc(100% - 55px);
+    color: var(--white);
+    outline: none;
+}
+.kh-message-inp input::placeholder{
+    color: #877C75;
+}
+.kh-message-inp button {
+    width: 40px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 3px;
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+.kh-message-inp button:hover {
+    background: #ECA285;
+}
+/*-----Form Section-----*/
+.kh-note {
+    margin: 0 0 30px;
+    padding-top: 25px;
+    border-top: 1px solid #473932;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ACA098;
+}
+.kh-treat-form label {
+    padding: 10px 15px;
+    border: 1px solid #473932;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.kh-treat-form label span, .kh-form-u_picture span {
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.kh-treat-form label input, .kh-treat-form label textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #877C75;
+    font-size: 14px;
+    outline: none;
+}
+.kh-treat-form label input::placeholder {
+    color: #877C75;
+}
+.kh-treat-form label textarea{
+    min-width: 100%;
+}
+.kh-form-u_picture span{
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.kh-form-u_picture label {
+    width: calc(25% - (40px / 3));
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(112.47deg, rgba(217, 148, 120, 0.06) 13.91%, rgba(217, 148, 120, 0.16) 48.39%, rgba(217, 148, 120, 0.03) 87.48%);
+    color: var(--red);
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.kh-form-u_picture label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.kh-treat-form button.kh-btn_red {
+    margin-top: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+/*-----Join Friend-----*/
+.kh-join-friend {
+    margin-top: 50px;
+}
+.kh-join-friend .kh-jf-col:first-child {
+    width: 50%;
+}
+.kh-jf-col h4 {
+    margin: 0 0 20px;
+    color: var(--white);
+    font-size: 14px;
+}
+.kh-jf-col .kh-treat-form button.kh-btn_red {
+    width: 100%;
+    margin-top: 20px;
+}
+.kh-join-friend .kh-jf-col:last-child {
+    width: calc(50% - 30px);
+}
+.kh-jf-col .kh-note {
+    font-size: 12px;
+}
+.kh-event .kh-event-item {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid #473932;
+}
+.kh-event .kh-event-item span{
+    width: 100%;
+}
+.kh-event .kh-event-item a {
+    text-decoration: none;
+}
+.kh-event .kh-e_text-wrap p {
+    background-image: none;
+}
+/*-----Succsess Section-----*/
+.kh-succsess-header {
+    align-items: center;
+}
+.kh-succsess-header h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.kh-succsess-header i {
+    font-size: 100px;
+    color: var(--red);
+}
+.kh-succsess-header p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ACA098;
+    margin: 50px 0 35px;
+    width: 100%;
+}
+.kh-succsess-header button.kh-btn_red {
+    border: none;
+    border-radius: 10px;
+}

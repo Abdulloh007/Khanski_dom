@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ханский дом - Addition</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="css/addition.css">
+    </head>
+    <body>
+        <button id="signIn" class="kh-btn_red kh-pop_up-btn"><i class="far fa-user"></i></button>
+        <button id="recover" class="kh-btn_red kh-pop_up-btn"><i class="far fa-recover"></i></button>
+        <button id="succsess" class="kh-btn_red kh-pop_up-btn"><i class="far fa-check"></i></button>
+        <button id="mail-to-boss" class="kh-btn_red kh-pop_up-btn"><i class="far fa-envalope"></i></button>
+        <button id="select-town" class="kh-btn_red kh-pop_up-btn"><i class="far fa-home"></i></button>
+
+            <div data-target="signIn" class="kh-pop_up-wrap kh-dfw">
+                <div class="kh-pop_up-header">
+                    <h4>Вход</h4>
+                    <i class="far fa-close"></i>
+                </div>
+                <div class="kh-pop_up-content">
+                    <form action="#">
+                        <label>
+                            <span>Номер телефона</span>
+                            <input type="tel" name="" placeholder="+7" size="11" maxlength="11" minlength="11">
+                        </label>
+                        <label>
+                            <span>Ваш пароль</span>
+                            <input type="password" name="" placeholder="• • • • • • • • • • • • •">
+                        </label>
+                        <a href="#" class="kh-link">Восстановить пароль</a>
+                        <button class="kh-btn_red" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+            <div data-target="recover" class="kh-pop_up-wrap kh-recover kh-dfw">
+                <div class="kh-pop_up-header">
+                    <h4>Восстановить пароль</h4>
+                    <p>Мы отправим новый пароль на вашу электронную почту</p>
+                    <i class="far fa-close"></i>
+                </div>
+                <div class="kh-pop_up-content">
+                    <form action="#">
+                        <label class="kh-label">
+                            <span>Электронная почта</span>
+                            <input type="email" name="" placeholder="name@mail.com">
+                        </label>
+                        <a href="#" class="kh-link">Восстановить пароль</a>
+                        <button class="kh-btn_red" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+            <div data-target="succsess" class="kh-pop_up-wrap kh-dfw">
+                <div class="kh-pop_up-header">
+                    <h4>Отлично</h4>
+                    <i class="far fa-close"></i>
+                </div>
+                <div class="kh-s_form kh-dfw">
+                    <i class="far fa-check"></i>
+                    <p>Мы отправили ссылку на восстановление доступа на вашу электронною почту</p>
+                </div>
+                <div class="kh-pop_up-content">
+                        <button class="kh-btn_red" type="submit">Войти</button>
+                </div>
+            </div>
+
+            <div data-target="mail-to-boss" class="kh-pop_up-wrap kh-mb kh-dfw">
+                <div class="kh-pop_up-header">
+                    <h4>Написать директору</h4>
+                    <i class="far fa-close"></i>
+                </div>
+                <div class="kh-pop_up-content">
+                    <form action="#" class="kh-dfw">
+                        <label class="kh-label kh-l_col">
+                            <span >Ваше имя</span>
+                            <input type="text" name="" placeholder="Ильфат">
+                        </label>
+                        <label class="kh-label kh-l_col">
+                            <span >Электронная почта</span>
+                            <input type="email" name="" placeholder="name@mail.com">
+                        </label>
+                        <label class="kh-label kh-l_col">
+                            <span >Номер телефона</span>
+                            <input type="tel" name="" placeholder="+7" size="11" maxlength="11" minlength="11">
+                        </label>
+                        <label class="kh-label">
+                            <span >Ваше сообщение</span>
+                            <textarea name="" rows="1" placeholder="Меня интересует..."></textarea>
+                        </label>
+                        <div class="kh-pop_up-footer kh-dfw">
+                        <button class="kh-btn_red" type="submit">Отправить</button>
+                            <p>Нажимая на кнопку вы принимаете условия обработки персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div data-target="select-town" class="kh-pop_up-wrap kh-town kh-dfw">
+                <div class="kh-pop_up-header">
+                    <h4>Выбрать город</h4>
+                    <i class="far fa-close"></i>
+                </div>
+                <div class="kh-pop_up-content">
+                    <form action="#" class="kh-dfw">
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Казань</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Москва</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Санкт-Петербург</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Новосибирск</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Екатеринбург</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Нижний Новгород</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Челябинск</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Самара</p>
+                        </label>
+                        <label class="kh-ch_container kh-l_col">
+                          <input type="radio" name="radio">
+                          <span class="kh-ch_checkmark"></span>
+                          <p>Омск</p>
+                        </label>
+                        <div class="kh-pop_up-footer">
+                            <button class="kh-btn_red" type="submit">Выбрать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    <script src="js/addition.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+header nav{
+    background-color: var(--dark)
+}
+/*-----404 page not founded Section-----*/
+.kh-404 {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 52%, rgba(241,241,241,1) 52%);
+}
+.kh-4_left-side {
+    position: relative;
+    width: 50%;
+}
+.kh-4_left-side img {
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    right: 0;
+}
+.kh-4_right-side {
+    width: 45%;
+}
+.kh-4_right-side h1 {
+    font-size: 86px;
+    color: var(--red);
+    margin: 0;
+}
+.kh-4_right-side a {
+    font-size: 14px;
+}
+
+/*-----Footer-----*/
+footer{
+    margin: 0;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {
+    section.kh-404 {
+        padding: 175px 0 75px;
+    }
+}
+@media (max-width: 768px) {
+    section.kh-404 {
+        padding: 155px 0 75px;
+    }
+    .kh-4_left-side {
+        position: relative;
+        width: 40%;
+    }
+    .kh-4_right-side {
+        width: 55%;
+    }
+    .kh-4_right-side .kh-sec_heading{
+        font-size: 26px;
+    }
+}
+@media (max-width: 567px) {
+    section.kh-404 {
+        padding: 145px 0 75px;
+    }
+    .kh-4_left-side {
+        display: none;
+    }
+    .kh-4_right-side {
+        width: 90%;
+        margin: auto;
+    }
+}
