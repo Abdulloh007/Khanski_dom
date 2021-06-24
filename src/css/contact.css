@@ -116,6 +116,13 @@ header nav{
     }
     .kh-bread-crumb {
         margin-top: 0;
+    }
+}
+@media (max-width: 567px) {
+    .kh-i_left-side {
+        width: 80px;
+    }
+    .kh-i_right-side {
+        width: calc(100% - 80px);
     }    
 }
-@media (max-width: 567px) { ... }

@@ -45,7 +45,13 @@ window.addEventListener('DOMContentLoaded', function () {
         tabBtn[n].classList.add('active');
         tabContent[n].classList.add('active');
     }
-    showTab(0);
+    if (document.readyState === "complate") {
+        showSelectMaterial(0);
+    }else {
+        setTimeout(() => {
+            showTab(0);
+        },500)
+    }
     tabNav.addEventListener('click', function () {
         const target = event.target;
         for (let i = 0; i < tabBtn.length; i++) {
@@ -56,6 +62,8 @@ window.addEventListener('DOMContentLoaded', function () {
     })
 
 })
+
+
 //INPUT Mask
 window.onload = function() {
    MaskedInput({

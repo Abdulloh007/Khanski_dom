@@ -794,6 +794,9 @@ section.kh-draw{
     .kh-h_left-side {
         width: 100%;
     }
+    .kh-h_left-side h2.kh-sec_heading, .kh-h_left-side h2.kh-sec_heading b {
+        font-size: 46px;
+    }
     .kh-h_center-side{
         display: none;
     }
@@ -802,9 +805,32 @@ section.kh-draw{
         border-bottom: 1px solid #D1D1D1;
         margin-bottom: 15px;
     }
+    .kh-i_item{
+        margin-right: 5px;
+    }
+    .kh-house_info .kh-i_item:last-child{
+        margin-right: 0;
+    }
+    .kh-i_item p{
+        font-size: 8px;
+    }
+    .kh-i_item h4 {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
     /*-----Obser Video Section-----*/
     .kh-d_item {
-        width: 100%;
+        width: 33.3335%;
+    }
+    .kh-d_item h4{
+        font-size: 11px;
+    }
+    .kh-d_item .kh-corner::before{
+        width: 62px;
+        height: 62px;
+    }
+    .kh-d_item p{
+        font-size: 8px;
     }
     .kh-ob_v-data {
         padding-left: 0;
@@ -818,5 +844,24 @@ section.kh-draw{
     .kh-banner_wrap .kh-form p{
         opacity: .6;
     }
+    /*-----Draft Section-----*/
+    .kh-dr_img {
+        width: 100%;
+    }
+    .kh-dr_content-wrap {
+        width: 100%;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .kh-dr_content-wrap h4 {
+        width: 100%;
+    }
+    .kh-dr_wrap-item {
+        width: 33.3335%;
+    }
 
+    .kh-dr_content-wrap .kh-about_btn-invert {
+        margin: auto;
+    }
 }

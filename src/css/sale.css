@@ -22,6 +22,9 @@ header{
 }
 @media (max-width: 768px) { ... }
 @media (max-width: 567px) {
+    section.our-service {
+        display: none;
+    }
     .kh-b_banner img, .kh-s_slide img {
         width: auto;
     }

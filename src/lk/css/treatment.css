@@ -28,8 +28,8 @@
     position: relative;
     width: calc(65% - 55px);
     background: #27221F;
-    margin: -48px 0;
-    padding: 48px 0 48px 55px;
+    margin: -48px -15px -48px 0;
+    padding: 48px 15px 48px 55px;
     box-sizing: border-box;
 }
 .kh-event-poster {
@@ -160,7 +160,7 @@
     width: calc(100% - 115px);
     margin: 0 0 0 auto;
     color: var(--white);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -350,7 +350,7 @@
     margin: 0 0 30px;
     padding-top: 25px;
     border-top: 1px solid #473932;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     color: #ACA098;
 }
@@ -374,6 +374,7 @@
     color: #877C75;
     font-size: 14px;
     outline: none;
+    font-family: 'Mont', sans-serif;
 }
 .kh-treat-form label input::placeholder {
     color: #877C75;
@@ -405,7 +406,8 @@
     margin-top: 35px;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 15px 20px;
 }
 /*-----Join Friend-----*/
 .kh-join-friend {
@@ -468,4 +470,40 @@
 .kh-succsess-header button.kh-btn_red {
     border: none;
     border-radius: 10px;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works {
+        width: 40%;
+    }
+    /*-----selected Section-----*/
+    .kh-join-friend .kh-jf-col:first-child {
+        width: 100%;
+    }
+    .kh-join-friend .kh-jf-col:last-child {
+        width: 100%;
+        margin-top: 45px;
+    }
+    .kh-succsess-header h3{
+        font-size: 30px;
+    }
+}
+@media (max-width: 992px) {
+    /*-----Selected Section-----*/
+    .kh-heading-wrap h3{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    /*-----Selected Section-----*/
+    .kh-heading-wrap h3 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    /*-----Selected Section-----*/
+    .kh-chart-of-works {
+        width: 100%;
+    }
 }

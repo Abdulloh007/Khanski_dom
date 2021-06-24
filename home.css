@@ -864,6 +864,11 @@ a.kh-s_slide:hover .kh-slide-b_content{
     .kh-my_plane img{
         top: -10%;
     }
+    /*-----Guidline Sectiom-----*/
+    .kh-icon_square {
+        display: inline-block;
+        margin-left: 18px;
+    }
     /*-----Ready Houses-----*/
     .kh-r_slide_content h3 {
         font-size: 32px;
@@ -962,20 +967,45 @@ a.kh-s_slide:hover .kh-slide-b_content{
     }
 }
 @media (max-width: 567px) {
+    .kh-video_btn i {
+        font-size: 20px;
+        height: 20px;
+        width: 20px;
+        padding: 30px;
+    }
     /*-----Counter Section-----*/
     .kh-counter_item {
-        width: 200px;
-        margin: 0 auto;
-        margin-bottom: 25px;
+        width: 50%;
+        margin: 0 auto 25px;
+        padding: 25px 0 0 25px;
+    }
+    .kh-counter_item h4 {
+        font-size: 24px;
+        min-height: 35px;
+    }
+    .kh-corner::before {
+        width: 42px;
+        height: 42px;
+    }
+    .kh-counter_item p {
+        margin: 0 0 15px;
+        font-size: 16px;
     }
     /*-----Form Section-----*/
     .kh-form label {
         margin-bottom: 15px;
     }
-    .kh-my_plane{
+    .kh-my_plane {
         padding: 5%;
+        display: none;
     }
     /*-----Ready Houses Section-----*/
+    section.kh-ready_houses .kh-container .kh-row{
+        margin: 0;
+    }
+    .kh-r_slide {
+        margin-bottom: 15px;
+    }
     .kh-r_slide_content {
         padding: 35px 30px;
     }
@@ -997,15 +1027,16 @@ a.kh-s_slide:hover .kh-slide-b_content{
         margin-top: 10px;
     }
     /*-----Guidline Sectiom-----*/
-    .kh-icon_square{
-        display: inline-block;
-    }
     .kh-g_item {
-        width: 100%;
+        width: 50%;
         text-align: center;
         padding: 0;
     }
-    .kh-row .kh-g_item:last-child {
+    .kh-g_content p {
+        font-size: 14px;
+        display: none;
+    }
+    .kh-mi-description .kh-g_item:nth-child(3), .kh-mi-description .kh-g_item:nth-child(4){
         margin-bottom: 0;
     }
     /*-----Partfolio Section-----*/
@@ -1089,6 +1120,9 @@ a.kh-s_slide:hover .kh-slide-b_content{
         width: inherit;
     }
     /*-----FOLLOW Section-----*/
+    section.kh-follow_us .kh-container .kh-row:nth-child(2){
+        margin: 0;
+    }
     .kh-fl_us-header-left-side, .kh-fl_us-header-right-side {
         max-width: 100%;
         width: 100%;

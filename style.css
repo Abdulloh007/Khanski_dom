@@ -147,6 +147,7 @@ nav hr{
     color: var(--dark)~;
     text-transform: uppercase;
     text-decoration: none;
+    justify-content: center;
 }
 i.fa-play {
     transition: all .4s ease;
@@ -1057,6 +1058,10 @@ nav.kh-mobile-menu{
     box-sizing: border-box;
     margin: 0;
 }
+.kh-m_menu h4{
+    color: var(--red);
+    margin-top: 45px;
+}
 .kh-m_menu li {
     list-style: none;
     font-size: 18px;
@@ -1071,6 +1076,15 @@ nav.kh-mobile-menu{
     display: block;
     padding: 15px 0;
     text-decoration: none;
+}
+.kh-m_menu-bottom .kh-f_logo {
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.kh-f_logo img {
+    max-width: 25%;
+    margin: auto;
 }
 .kh-m_menu li a:focus{
     color: var(--red);
@@ -1531,7 +1545,7 @@ nav.kh-mobile-menu{
     }
     /*-----Header Section-----*/
     .kh-heading-wrap h1 {
-        font-size: 38px;
+        font-size: 28px;
     }
     .kh-heading-wrap p {
         font-size: 16px;
@@ -1603,10 +1617,12 @@ nav.kh-mobile-menu{
     .kh-total-r_project {
         width: 100%;
         margin-bottom: 15px;
+        display: none;
     }
     .kh-q_info img {
         height: 100%;
         width: 100%;
+        display: none;
     }
     .kh-q_info p.kh-corner {
         margin-top: 15px;
@@ -1616,14 +1632,27 @@ nav.kh-mobile-menu{
         width: inherit;
     }
     /*-----FOLLOW Section-----*/
+    section.kh-follow_us .kh-container .kh-row:nth-child(2){
+        margin: 0;
+    }
+    .kh-instagram-slider{
+        pointer-events: none;
+    }
     .kh-fl_us-header-left-side, .kh-fl_us-header-right-side {
         max-width: 100%;
         width: 100%;
+    }
+    .kh-fl_us-header-right-side{
+        display: none;
+    }
+    .kh-instagram-btn-prev, .kh-instagram-btn-next {
+        display: none;
     }
     /*-----Footer-----*/
     .kh-f_logo {
         width: 100%;
         justify-content: center;
+        display: none;
     }
     .kh-f_logo img {
         max-width: 20%;
@@ -1642,11 +1671,20 @@ nav.kh-mobile-menu{
        font-size: 14px;
     }
     .kh-f_col {
-        width: 100%;
-        padding-left: 0;
+        width: 50%;
         padding-bottom: 25px;
-        text-align: center;
         border-right: none;
         border-bottom: 1px solid #403732;
+    }
+    .kh-row .kh-f_col:first-child, .kh-row .kh-f_col:nth-child(4){
+        padding-left: 25px;
+
+    }
+    .kh-row .kh-f_col:last-child{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .kh-row .kh-f_col:last-child .kh-btn_red, .kh-row .kh-f_col:last-child .kh-btn_red-invert {
+        width: calc(50% - 5px);
     }
 }

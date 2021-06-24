@@ -54,8 +54,8 @@
     position: relative;
     width: calc(65% - 55px);
     background: #27221F;
-    margin: -48px 0;
-    padding: 48px 0 48px 55px;
+    margin: -48px -15px -48px 0;
+    padding: 48px 15px 48px 55px;
     box-sizing: border-box;
 }
 .kh-docs-poster {
@@ -116,6 +116,9 @@
 .kh-e_t-btn.active {
     color: var(--white);
     border-bottom: 2px solid var(--red);
+}
+.kh-e_t-nav .kh-e_t-btn:last-child {
+    margin-right: 0;
 }
 .kh-e_t-nav {
     border-bottom: 1px solid #473932;
@@ -199,4 +202,20 @@
 .kh-v-pop_up-wrap i:hover{
     background: #ECA285;
 
+}
+
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works {
+        width: 40%;
+    }
+}
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) { ... }
+@media (max-width: 576px) {
+    /*-----Selected Section-----*/
+    .kh-chart-of-works {
+        width: 100%;
+    }
 }

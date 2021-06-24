@@ -55,6 +55,7 @@ header{
     }
     .kh-oa-col a{
         font-size: 14px;
+        float: right;
     }
     /*-----Bonus Section-----*/
     .kh-bonus-banner_content h3 {

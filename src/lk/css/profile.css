@@ -132,3 +132,17 @@
     border-radius: 10px;
     font-size: 14px;
 }
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) { ... }
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) {
+    .kh-prof {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .kh-prof-form label {
+        width: 100%;
+    }
+}

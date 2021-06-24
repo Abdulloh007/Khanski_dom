@@ -155,6 +155,9 @@ header{
 
 }
 @media (max-width: 567px) {
+    .kh-r_wrap{
+        padding: 15px 15px 45px
+    }
     .kh-b_banner{
         margin-bottom: 15px;
         padding: 40px 50px 50px;

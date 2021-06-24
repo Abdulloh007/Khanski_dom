@@ -70,7 +70,7 @@
     font-style: normal;
 }
 .kh-c_i-state h4 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
     color: #fff;
     margin: 0;
@@ -111,7 +111,7 @@
     width: calc(100% - 115px);
     margin: 0 0 0 auto;
     color: var(--white);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -122,6 +122,7 @@
     border-radius: 10px;
     padding: 15px 20px;
     margin-bottom: 15px;
+    align-items: center;
     text-decoration: none;
 }
 .kh-ins-item span {
@@ -193,7 +194,7 @@
 }
 .kh-stream img {
     position: absolute;
-    max-height: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
     z-index: -2;
@@ -282,4 +283,77 @@
     line-height: 130%;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works, .kh-online-camera {
+        width: calc(50% - 15px);
+    }
+    .kh-chart-of-payments {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .kh-m_shift{
+        width: calc(50% - 15px);
+    }
+
+}
+@media (max-width: 992px) {
+    .kh-static-side{
+        display: block;
+        width: 30%;
+    }
+    section.kh-my-house {
+        width: calc(100% - 20px);
+    }
+    .kh-my-p_col h4 {
+        font-size: 20px;
+    }
+    .kh-my-p_col p {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .kh-dinamic-side{
+        width: 70%;
+    }
+    .kh-wrap {
+        padding-left: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .kh-static-side, .kh-dinamic-side{
+        width: 100%;
+    }
+    .kh-s_overlay {
+        width: 100vw;
+        right: -15px;
+    }
+    section.kh-my-house {
+        width: 50%;
+        min-width: 300px;
+    }
+    .kh-wrap {
+        padding-left: 0;
+    }
+    .kh-chart-of-works, .kh-online-camera {
+        width: calc(50% - 15px);
+    }
+    .kh-chart-of-payments {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .kh-m_shift{
+        width: calc(50% - 15px);
+    }
+}
+@media (max-width: 576px) {
+    section.kh-my-house {
+        width: 100%;
+        min-width: auto;
+    }
+    .kh-chart-of-works, .kh-online-camera, .kh-chart-of-payments {
+        width: 100%;
+    }
 }

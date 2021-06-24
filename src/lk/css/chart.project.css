@@ -71,7 +71,7 @@
     font-style: normal;
 }
 .kh-c_i-state h4 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
     color: #fff;
     margin: 0;
@@ -165,8 +165,8 @@
     position: relative;
     width: calc(65% - 55px);
     background: #27221F;
-    margin: -48px 0;
-    padding: 48px 0 48px 55px;
+    margin: -48px -15px -48px 0;
+    padding: 48px 15px 48px 55px;
     box-sizing: border-box;
 }
 .kh-event-poster {
@@ -318,4 +318,33 @@
 .kh-v-pop_up-wrap i:hover{
     background: #ECA285;
 
+}
+
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works {
+        width: 40%;
+    }
+    .kh-chat-item::after{
+        left: 30%;
+    }
+}
+@media (max-width: 992px) {
+    /*-----Selected Section-----*/
+    .kh-heading-wrap h3{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    /*-----Selected Section-----*/
+    .kh-heading-wrap h3 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    /*-----Selected Section-----*/
+    .kh-chart-of-works {
+        width: 100%;
+    }
 }

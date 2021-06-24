@@ -26,7 +26,9 @@ window.addEventListener('DOMContentLoaded', function () {
     function globTabinationAct(elem) {
         const globTabNav = elem.querySelectorAll('.kh-glob-nav'),
         globTabBtn = elem.querySelectorAll('.kh-glob-btn'),
-        globTab = elem.querySelectorAll('.kh-glob-tab');
+        globTab = elem.querySelectorAll('.kh-glob-tab'),
+        backMobBtn = document.createElement('i');
+        backMobBtn.classList.add('far', 'fa-arrow-left', 'kh-back-mob', 'kh-btn_red');
         globTabNav.forEach((item) => {
             item.addEventListener('click', function () {
                 const target = event.target,
@@ -38,14 +40,22 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
-
-        tabAction(0);
+        if (window.innerWidth >= 576) {
+            tabAction(0);
+        }
         function tabAction(n){
             globTab.forEach((item) => item.classList.remove('active'));
             globTabBtn.forEach((item) => item.classList.remove('active'));
             globTab[n].classList.add('active');
             globTabBtn[n].classList.add('active');
+            if (window.innerWidth <= 576) {
+                globTab[n].prepend(backMobBtn)
+            }
         }
+        backMobBtn.addEventListener('click', function () {
+            globTabBtn.forEach((item) => item.classList.remove('active'));
+            globTab.forEach((item) => item.classList.remove('active'));
+        })
     };
     globTabinationAct(globTabination);
 

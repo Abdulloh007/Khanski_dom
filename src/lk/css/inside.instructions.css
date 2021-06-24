@@ -53,8 +53,8 @@
     position: relative;
     width: calc(65% - 55px);
     background: #27221F;
-    margin: -48px 0;
-    padding: 48px 0 48px 55px;
+    margin: -48px -15px -48px 0;
+    padding: 48px 15px 48px 55px;
     box-sizing: border-box;
 }
 .kh-wrap-content {
@@ -72,4 +72,20 @@
     font-size: 14px;
     color: #ACA098;
     margin: 0;
+}
+
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works {
+        width: 40%;
+    }
+}
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) { ... }
+@media (max-width: 576px) {
+    /*-----Selected Section-----*/
+    .kh-chart-of-works {
+        width: 100%;
+    }
 }

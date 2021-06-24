@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', function () {
     //INSTAGRAM SLIDER
     const instagramSwiper = new Swiper(".kh-instagram-slider", {
         speed: 1000,
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 15,
         breakpoints: {
             567: {
@@ -117,10 +117,6 @@ window.addEventListener('DOMContentLoaded', function () {
         navigation: {
         nextEl: ".kh-instagram-btn-next",
         prevEl: ".kh-instagram-btn-prev",
-        },
-        autoplay:
-        {
-        delay: 5000,
         },
         loop: true
     });

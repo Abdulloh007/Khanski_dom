@@ -34,6 +34,7 @@
     border-radius: 10px;
     margin: 25px 0 35px;
     text-align: center;
+    font-size: 14px;
 }
 .kh-chart-of-works .kh-event-item a{
     text-decoration: none;
@@ -53,8 +54,8 @@
     position: relative;
     width: calc(65% - 55px);
     background: #27221F;
-    margin: -48px 0;
-    padding: 48px 0 48px 55px;
+    margin: -48px -15px -48px 0;
+    padding: 48px 15px 48px 55px;
     box-sizing: border-box;
 }
 .kh-step-list {
@@ -79,7 +80,7 @@
     border-radius: 6px;
 }
 .kh-step-item p, .kh-step-item a {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     color: #FFFFFF;
     width: calc(100% - 40px);
@@ -90,4 +91,20 @@
     font-size: 18px;
     color: var(--red);
     background: none;
+}
+
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 1200px) {
+    .kh-chart-of-works {
+        width: 40%;
+    }
+}
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) { ... }
+@media (max-width: 576px) {
+    /*-----Selected Section-----*/
+    .kh-chart-of-works {
+        width: 100%;
+    }
 }
